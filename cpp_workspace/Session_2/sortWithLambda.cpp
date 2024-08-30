@@ -7,7 +7,7 @@ int main(){
     ,56,93,1,};
 
 
-    std::sort(arr, arr+9,[](int a, int b){return a > b;});
+    std::sort(arr, arr+9,[](int a, int b)-> bool{return a > b;});
     std::cout << "Sorted Descending Array:" << std::endl;
     for (int num : arr){
         std::cout << num << ", ";
